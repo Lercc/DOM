@@ -20,3 +20,19 @@
     En la siguiente página se muestra las api según MDN;
     [https://developer.mozilla.org/es/docs/web/api]
 
+## LECTURA DE NODOS
+    - Obtener un elemento por su ID:
+    - document.getElementById('id')
+
+    - Obtener elementos mediante el nombre de la etiqueta:
+    - document.getElementsByTagName('tagName')
+
+    - Obtener elementos mediante el nombre de clase:
+    - document.getElementsByClassName('className')
+
+    - Selecciona un solo elemento y lo devuelve, la selección se hace a través de lo que
+      le pases entre paréntesis, y la selección puede ser con sintaxis de CSS
+    - document.querySelector()
+
+    - Obtener varios elementos
+    - document.querySelectorAll()
