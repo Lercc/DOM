@@ -44,3 +44,19 @@
     - QUERYSELECTOR DEVUELVE un NodeList
 
 
+## NODELISTS VS ARRAY
+    - doc.querySelector y querySelectorAll devuelven un Nodelist
+    - Un NodeList carece de algunos métodos presentes en los array como:
+        - map
+        - filter
+        - some
+        - reduce
+    
+    - Es más convencional trabajar con Array,ya que los motores de los navegadores 
+     estan optimizados para trabajar con Array que con nodeList entonces existe una manera
+    de convertir un nodeList en un array mediante el operador de propagación de JS ...
+    <pre>CONST nodeListTOArray = [...nodelist]</pre>
+
+
+
+
