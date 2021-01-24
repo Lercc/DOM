@@ -53,9 +53,9 @@
         - reduce
     
     - Es más convencional trabajar con Array,ya que los motores de los navegadores 
-     estan optimizados para trabajar con Array que con nodeList entonces existe una manera
-    de convertir un nodeList en un array mediante el operador de propagación de JS ...
-    <pre>CONST nodeListTOArray = [...nodelist]</pre>
+      estan optimizados para trabajar con Array que con nodeList entonces existe una manera
+      de convertir un nodeList en un array mediante el operador de propagación de JS ...
+<pre>CONST nodeListTOArray = [...nodelist]</pre>
 
 
 
