@@ -6,8 +6,8 @@
 <img src="./md/criticalRenderinPath.jpg" alt="img">
 </div>
 
-#### El DOM es una representación del HTML en una estructura en forma de árbol de nodos
-#### El CSSOM es una representación de los estilos en una estructura en forma de árbol de nodos
+    El DOM es una representación del HTML en una estructura en forma de árbol de nodos
+    El CSSOM es una representación de los estilos en una estructura en forma de árbol de nodos
 
 
 
