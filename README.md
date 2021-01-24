@@ -28,7 +28,11 @@
     - document.getElementsByTagName('tagName')
 
     - Obtener elementos mediante el nombre de clase:
-    - document.getElementsByClassName('className')
+    - document.getElementsByClassName('className')  
+
+    - TANTO DOCUME...BYCLASNAME Y BYTAGNAME devuelven un array
+       del tipo HTML COLLECTIONS
+
 
     - Selecciona un solo elemento y lo devuelve, la selección se hace a través de lo que
       le pases entre paréntesis, y la selección puede ser con sintaxis de CSS
@@ -36,3 +40,7 @@
 
     - Obtener varios elementos
     - document.querySelectorAll()
+
+    - QUERYSELECTOR DEVUELVE un NodeList
+
+
