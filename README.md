@@ -220,3 +220,30 @@
 <div align="center">
 <img src="./md/replaceChild.jpg" alt="img">
 </div>
+
+## OPERACIONES EN LOTE
+    - sirve para no utilizar varias veces un método
+
+    ejemplo: Agragar 100 nodos del tipo input al final del documento
+
+    
+    SOLUCIÓN NO ÓPTIMA:
+    
+    - for(let i=0; i<100; i++ ) {
+        const nodo = document.createElement('input)
+        document.body.appendChild(nodo)
+    }
+    Se estaria ejecutando 100 veces el método appendChild
+
+
+    SOLUCIÓN ÓPTIMA:
+
+    const nodos = []
+    for (let i=0; i<100; i++) {
+        const nodo = document.createElement('input')
+        nodos.push(nodo)
+    }
+    document.body.append(nodos[0], nodos[1], ...)
+    // Usando el Spread Operator o operador de progagación para deconstruir el array nodos
+    // y enviarlos como parámetros individuales.
+    document.body.append(...nodos)
