@@ -59,7 +59,7 @@
 
 ## CREAR NODOS
 
-  - Para crear elmentos:
+  - Para crear elementos:
       document.createElement()
     
   - Para crear textos
@@ -69,6 +69,8 @@
 
   - Para agregar nodos:
 
+### appendChild()
+
     - Agrega solo un elemento(nodo) al final del elemento padre.
     - No puedes agregar texto 
 
@@ -77,6 +79,8 @@
 <div align="center">
 <img src="./md/appendChild.jpg" alt="img">
 </div>
+
+### append()
 
     - La evolución del método appendChild
     - Puedes agregar más de un elemento(nodo) 
@@ -89,6 +93,8 @@
 <img src="./md/append.jpg" alt="img">
 </div>
 
+### insertBefore()
+
     - Se agrega el nodo antes de un nodo en espefícico que pasamos por parámetro
     - El nodo de referencia debe ser hijo directo del nodo Base
       parentElement.insertBefore(nodo, nodoDeReferencia)
@@ -100,6 +106,8 @@
 <div align="center">
 <img src="./md/insertBefore2.jpg" alt="img">
 </div>
+
+### insertAdjacentElement()
 
     - Forma avanzada de insertar nodos a partir de una referencia.
     - Permite agregar en diferentes posiciones según le pasemos por parámetro.
