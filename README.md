@@ -178,12 +178,12 @@
 ## ELIMINAR NODOS
 
 ### removeChild()
-    - Remuve un nodo teniendo en cuenta el nodo padre
+    Remuve un nodo teniendo en cuenta el nodo padre
     
        NodoPadre.removeChild(NodoHijoAEliminar)
 
-    - Para no estar creadno una variable para ontner al padre, una alternativa es usar
-      .parentElement, que devulve el padre el elemento al que se le aplica.
+    Para no estar creadno una variable para ontner al padre, una alternativa es usar
+    .parentElement, que devulve el padre el elemento al que se le aplica.
 
       NodoHijoAEliminar.parentElement.removeChild(NodoHijoAEliminar )
 
@@ -222,14 +222,14 @@
 </div>
 
 ## OPERACIONES EN LOTE
-    - sirve para no utilizar varias veces un método
+    Sirve para no utilizar varias veces un método
 
     ejemplo: Agragar 100 nodos del tipo input al final del documento
 
     
     SOLUCIÓN NO ÓPTIMA:
     
-    - for(let i=0; i<100; i++ ) {
+    for(let i=0; i<100; i++ ) {
         const nodo = document.createElement('input)
         document.body.appendChild(nodo)
     }
