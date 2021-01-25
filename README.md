@@ -57,6 +57,68 @@
       de convertir un nodeList en un array mediante el operador de propagación de JS ...
 <pre>CONST nodeListTOArray = [...nodelist]</pre>
 
+## CREAR NODOS
 
+  - Para crear elmentos:
+      document.createElement()
+    
+  - Para crear textos
+      document.createTextNode()
+
+## AGREGAR NODOS
+
+  - Para agregar nodos:
+
+    - Agrega solo un elemento(nodo) al final del elemento padre.
+    - No puedes agregar texto 
+
+      perentElement.appendChild()
+
+<div align="center">
+<img src="./md/appendChild.jpg" alt="img">
+</div>
+
+    - La evolución del método appendChild
+    - Puedes agregar más de un elemento(nodo) 
+    - Puedes agregar texto
+    - IE 11: No soportado
+
+      parentElement.append()
+
+<div align="center">
+<img src="./md/append.jpg" alt="img">
+</div>
+
+    - Se agrega el nodo antes de un nodo en espefícico que pasamos por parámetro
+    - El nodo de referencia debe ser hijo directo del nodo Base
+      parentElement.insertBefore(nodo, nodoDeReferencia)
+    
+<div align="center">
+<img src="./md/insertBefore.jpg" alt="img">
+</div>
+
+<div align="center">
+<img src="./md/insertBefore2.jpg" alt="img">
+</div>
+
+    - Forma avanzada de insertar nodos a partir de una referencia.
+    - Permite agregar en diferentes posiciones según le pasemos por parámetro.
+
+      NodoDeREferencia.insertAdjacentElement('parámetro', nodo)
+
+<div align="center">
+<img src="./md/insertAdjacentElement.jpg" alt="img">
+</div>
+
+    - Tiene cuatro opciones de agregar el nuevo nodo:
+
+        - beforebegin   : inmediatamente antes de que comienze el nodo de referencia.
+        - afterbegin    : como nodo hijo después de que comienze el nodo de referencia.
+        - beforeend     : como nodo hijo antes de que termine el nodo de referencia.
+        - afterend      : inmediatamente después de que termine el nodo de referencia.
+
+<div align="center">
+<img src="./md/insertAdjacentElement2.jpg" alt="img">
+</div>
 
 
