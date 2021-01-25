@@ -65,6 +65,9 @@
   - Para crear textos
       document.createTextNode()
 
+## AGREGAR TEXTO 
+  - Nodo.textContent = 'HOla '
+
 ## AGREGAR NODOS
 
   - Para agregar nodos:
@@ -158,3 +161,62 @@
       o cambiar algun contenido por que se generan problemas de seguridad
       como los ataques XSS son un tipo de inyección en la cual un atacante 
       logra ejecutar código en los navegadores de los usuarios que acceden a un sitio web legítimo
+
+## ATRIBUTOS Y PROPIEDADES
+
+    - Los atributos son utilizados unicamente para inicializar los elementos
+      HTML puenden ser class, type, placeholder, id, required , etc..
+
+    - Las propiedades son aquellas que iran cambiando a lo largo de un programa 
+      mediante JS según la lógica que este lleve.
+
+    - Los atributos de HTML son palabras especiales utilizadas dentro de la etiqueta de apertura,
+      para controlar el comportamiento del elemento. Los atributos de HTML son un modificador de un
+      tipo de elemento de HTML Las propiedades del DOM sera inicializada por los atributos del HTML
+      para posteriormente modificarlas.
+
+## ELIMINAR NODOS
+
+### removeChild()
+    - Remuve un nodo teniendo en cuenta el nodo padre
+    
+       NodoPadre.removeChild(NodoHijoAEliminar)
+
+    - Para no estar creadno una variable para ontner al padre, una alternativa es usar
+      .parentElement, que devulve el padre el elemento al que se le aplica.
+
+      NodoHijoAEliminar.parentElement.removeChild(NodoHijoAEliminar )
+
+
+<div align="center">
+<img src="./md/removeChild.jpg" alt="img">
+</div>
+
+<div align="center">
+<img src="./md/removeChild2.jpg" alt="img">
+</div>
+
+### remove()
+
+    - Es la evolución de removeChild.
+    - No está soportado por IE
+    - En este método no se necesita de instanciar al nodo padre
+      por dentro es el método quien se encarga de encontrar al padre así
+      que no debemos pasar por parámetro el nodo a eliminar, si no que solo aplicar
+      al nodo en cuestion.
+
+      nodoAEliminar.remove()
+
+<div align="center">
+<img src="./md/remove.jpg" alt="img">
+</div>
+
+### replaceChild()
+    - Permite reemplazar un nodo por otro teniendo en cuanta la instancia del nodo padre.
+    - Tener en cuenta que el nodoAReemplazar tiene que ser un nodoHijo.
+
+      NodoPadre.replaceChild( NodoDeReemplazo, NodoAReemplazar )
+
+<div align="center">
+<img src="./md/replaceChild.jpg" alt="img">
+</div>
