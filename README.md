@@ -130,9 +130,8 @@
 </div>
 
 ## OTRAS FORMAS DE LEER Y AGREGAR NODOS
-<pre>
-    <h2>Hola</h2>  
-</pre>
+    $0
+    <h2>Hola</h2>
 
 ### leer: outerHTML
     $0.outerHTML
@@ -143,17 +142,19 @@
 
 ### escribir: innerHTML
     $0.innerHTML = '<span>hola2</span>'
-<pre>
+
     <h2>
         <span>hola2</span>
     </h2>  
-</pre>
+
 ### esribir: innerText
     $0.innerText = '<span>hola2</span>'
-<pre>
+
     <h2>"<span>hola2</span>"</h2>  
-</pre>
+
 
     - Esta forma de leer y escribir elementos no es aconsejable
       cuando es el usuario quien va a realizar la accion de escribir
-      o cambiar algun contenido por que se generan problemas de seguridad.
+      o cambiar algun contenido por que se generan problemas de seguridad
+      como los ataques XSS son un tipo de inyección en la cual un atacante 
+      logra ejecutar código en los navegadores de los usuarios que acceden a un sitio web legítimo
