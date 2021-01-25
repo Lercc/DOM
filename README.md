@@ -129,4 +129,31 @@
 <img src="./md/insertAdjacentElement2.jpg" alt="img">
 </div>
 
+## OTRAS FORMAS DE LEER Y AGREGAR NODOS
+<pre>
+    <h2>Hola</h2>  
+</pre>
 
+### leer: outerHTML
+    $0.outerHTML
+    "<h2>Hola</h2>"
+### lerr: outerText
+    $0.outerText
+    "Hola"
+
+### escribir: innerHTML
+    $0.innerHTML = '<span>hola2</span>'
+<pre>
+    <h2>
+        <span>hola2</span>
+    </h2>  
+</pre>
+### esribir: innerText
+    $0.innerText = '<span>hola2</span>'
+<pre>
+    <h2>"<span>hola2</span>"</h2>  
+</pre>
+
+    - Esta forma de leer y escribir elementos no es aconsejable
+      cuando es el usuario quien va a realizar la accion de escribir
+      o cambiar algun contenido por que se generan problemas de seguridad.
